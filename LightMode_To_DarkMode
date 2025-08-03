@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Example</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button class="ModeChanger">Dark Mode</button>
+    
+    
+    
+
+
+    <script>
+      let btn=document.querySelector(".ModeChanger");
+      let mode="light";
+      btn.addEventListener("click",() =>{
+        if(mode=="light"){
+          mode="dark";
+          btn.innerText="Light Mode";
+          document.querySelector("body").style.backgroundColor="Black";
+        }else{
+          mode="light";
+          document.querySelector("body").style.backgroundColor="White";
+          btn.innerText="Dark Mode";
+        }
+      });
+      
+        
+        
+               
+        
+    </script>
+
+  </body>
+</html>
